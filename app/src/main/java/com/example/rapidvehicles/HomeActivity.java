@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class HomeActivity extends AppCompatActivity {
 
-    AppCompatButton btnfind,btnview;
+    AppCompatButton btnfind,btnview,feed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +20,7 @@ public class HomeActivity extends AppCompatActivity {
 
         btnfind = findViewById(R.id.find);
         btnview = findViewById(R.id.pview);
+        feed =    findViewById(R.id.feed);
 
 
         btnview.setOnClickListener(new View.OnClickListener() {
@@ -36,5 +39,27 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        feed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Coming();
+            }
+        });
+    }
+
+    private void Coming(){
+        SweetAlertDialog pdialog = new SweetAlertDialog(HomeActivity.this, SweetAlertDialog.WARNING_TYPE);
+        pdialog.setTitleText("Soon");
+        pdialog.setContentText("Coming Soon!");
+        pdialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+            @Override
+            public void onClick(SweetAlertDialog sweetAlertDialog) {
+
+                sweetAlertDialog.dismissWithAnimation();
+            }
+        });
+        pdialog.setCanceledOnTouchOutside(false);
+        pdialog.show();
     }
 }
