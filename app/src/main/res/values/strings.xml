@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">App_Payment</string>
+
+    <string name="header1">Book a car</string>
+    <string name="header2">Select a car</string>
+    <string name="header3">Booking Confirmation</string>
+    <string name="header4">Payment</string>
+
+    <string name="page1_select">Select booking location</string>
+    <string name="page1_start">Start Trip</string>
+    <string name="page1_end">End Trip </string>
+    <string name="page1_item1">Self Drive</string>
+    <string name="page1_item2">Need Driver</string>
+    <string name="page1_item3">Pickup</string>
+    <string name="page1_item4">Home Drop</string>
+    <string name="page1_btn1">Find a Vehicler</string>
+
+    <string name="page3_btn1">Confirm and Pay</string>
+
+    <string name="page4_txt1">Card Number</string>
+    <string name="page4_txt2">Name on Card</string>
+    <string name="page4_txt3">Expiry Date</string>
+    <string name="page4_txt4">CVV Code</string>
+
+    <string name="page4_btn1">Continue</string>
+    <string name="page4_btn2">Cancel</string>
+
+    <string name="hyperlink">I Agree<a href="">(Terms and Conditions)</a></string>
+
+
+</resources>

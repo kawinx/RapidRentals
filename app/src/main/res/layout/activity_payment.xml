@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".Payment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/visa"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_txtview"
+                android:src="@drawable/visa" />
+
+            <ImageView
+                android:id="@+id/master"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_txtview"
+                android:src="@drawable/mastercard" />
+
+            <ImageView
+                android:id="@+id/american"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_txtview"
+                android:src="@drawable/americanexpress" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Number"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_txtview"
+            android:inputType="number"
+            android:maxLength="16"
+            android:paddingStart="10dp"
+            android:hint="Card number"/>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name On Card"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/nonname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_txtview"
+            android:inputType="textPersonName"
+            android:maxLength="16"
+            android:paddingStart="10dp"
+            android:hint="Name on Card"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/expiredate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_weight="0.5"
+                android:background="@drawable/custom_txtview"
+                android:inputType="date"
+                android:paddingStart="10dp"
+                android:hint="Exp.Date"/>
+
+            <EditText
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/CVV"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:background="@drawable/custom_txtview"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingStart="10dp"
+                android:hint="CVV"/>
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/hyperlink"
+            android:buttonTint="@color/appbar"
+            android:paddingStart="10dp"
+            android:background="@drawable/custom_txtview"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_okay"
+                android:backgroundTint="@color/appbar"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:text="Continue"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_cancel"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/appbar"
+                android:textColor="@color/black"
+                android:text="Cacnel"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

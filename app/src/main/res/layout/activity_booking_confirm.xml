@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".BookingConfirm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_txtview"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Tuk Tuk"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:src="@drawable/download"/>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:hint="Customer Name"/>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/cdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:hint="No.of Days for rent"/>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/passenger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:enabled="false"
+            android:hint="Passengers"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/startdate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_weight="0.5"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Start Date"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp" />
+
+
+
+            <TextView
+                android:id="@+id/enddate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_weight="0.5"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="End Date"
+                android:layout_marginEnd="10dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/pickuplocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:drawableTint="@color/black"
+            android:drawableEnd="@drawable/ic_baseline_location_on_24"
+            android:enabled="false"
+            android:hint="Passengers"/>
+
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:enabled="false"
+            android:hint="Total"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fincar_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/appbar"
+            android:text="@string/page3_btn1"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

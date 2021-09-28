@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ptype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Type"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/pdays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7 Days"
+                android:textSize="18dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/ptotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Price"
+                android:textSize="18dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/pdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Date"
+                android:textSize="18dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_weight="0.1"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            app:tint="@color/darkred" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

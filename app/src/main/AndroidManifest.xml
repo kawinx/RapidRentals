@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rapidvehicles">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App_Payment">
+        <activity
+            android:name="com.example.rapidvehicles.HomeActivity"
+            android:exported="true"  android:label="Home">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.rapidvehicles.ViewPayments"
+            android:exported="true" /> <!-- <meta-data android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyAomd5Vsx9dKcaRxbGivQ8wOBuIZyYyM-o"/> -->
+        <activity
+            android:name="com.example.rapidvehicles.Payment"
+            android:label="Payments">
+        </activity>
+        <activity
+            android:name="com.example.rapidvehicles.BookingConfirm"
+            android:label="Booking Confirmation" />
+        <activity
+            android:name="com.example.rapidvehicles.SelectCar"
+            android:label="Select a Car" />
+        <activity
+            android:name="com.example.rapidvehicles.MainActivity"
+            android:label="Book a Car">
+
+        </activity>
+    </application>
+
+</manifest>
