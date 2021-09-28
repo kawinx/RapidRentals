@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/img1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/modaltext"
+            android:text="Modal"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/platetext"
+            android:text="Plate"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#888686"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@+id/modaltext"
+            android:layout_marginLeft="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/platetext"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/passengertext"
+                android:text="Pas"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#888686"
+                android:layout_toRightOf="@+id/img1"
+                android:layout_below="@+id/platetext"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/pmText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Passengers Max"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll2"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/typetext"
+                android:text="Type"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#888686"
+                android:layout_below="@+id/passengertext"
+                android:layout_marginRight="5dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RS."
+                android:textSize="20dp"
+                android:id="@+id/ptext"/>
+
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/pricetext"
+                android:text="Price"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#F15A5A"
+                android:layout_below="@+id/typetext"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp"
+                android:id="@+id/btEdit"/>
+
+            <Button
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btnDelete"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "121433598939",
+    "firebase_url": "https://rapidrentalsapp-default-rtdb.firebaseio.com",
+    "project_id": "rapidrentalsapp",
+    "storage_bucket": "rapidrentalsapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121433598939:android:169c80e03c71bf93a055fe",
+        "android_client_info": {
+          "package_name": "com.example.rapidvehicles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121433598939-5jfsin97rflu5ptuvhga4if0ht22hlko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcTRy1ODS3WYnvOHzjn2PTo7_RVcSu250"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121433598939-5jfsin97rflu5ptuvhga4if0ht22hlko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

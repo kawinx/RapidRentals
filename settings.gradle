@@ -1,0 +1,2 @@
+rootProject.name = "RapidVehicles"
+include ':app'
